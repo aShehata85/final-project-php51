@@ -1,0 +1,537 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%; 
+}
+
+:root{
+    --text-color: white;
+    --hover-color: hotpink;
+    --background-color: rgba(255, 0, 255, 0.4);
+}
+.container {
+    width: 85%; 
+    margin: 0% auto ;
+    padding: 0% ;
+}
+
+/* start header */
+header h6 {
+    font-size: 13px;
+}
+
+header .navbar .note{
+    margin-right: 35%;
+}
+
+/* to make burger menu with white color-font*/
+header nav button {
+    color: var(--text-color) !important;
+}
+
+header .navbar .collapse .navbar-nav .nav-link:hover{
+    color: var(--hover-color);
+}
+
+/* end header */
+
+/* start fashion */
+.fashion header h2 {
+    font-family: 'Brush Script MT', cursive;
+    font-size:40px ;
+    margin-right: 26%;
+}
+
+.fashion .d-flex .nav .nav-link{
+    color: var(--text-color) ;
+}
+
+.fashion .d-flex .nav .nav-link:hover{
+    color: var(--hover-color) ;
+}
+/* end fashion */
+
+/* start slider */
+.slide-show .carousel-inner .carousel-caption{
+    background-color: var(--background-color);
+    width: 30%;
+    margin-left: 20%;
+    margin-bottom: 6%;
+}
+
+.slide-show .carousel-inner .carousel-caption h5 {
+    letter-spacing: 3.5px;
+}
+/* end slider */
+
+/* start trend */
+.trend {
+    margin-top: 2%;
+    margin-bottom: 7%;
+    margin-left: 7%;
+}
+
+.trend h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: var(--hover-color);
+    letter-spacing: 3px;
+    padding-top: 2%;
+}
+
+.trend h1 {
+    font-size: 30px;
+}
+
+.trend p {
+    font-size: 13px;
+    padding-right: 19%;
+    color: grey;
+}
+
+.trend .right .desc {
+    background-color: #d8d5cf;
+    color: #ecf0f1;
+    width: 45%;
+    height: 56%;
+    opacity: 0;
+    padding-top: 15%;
+}
+
+.trend .right:hover .desc {
+    opacity: 0.9;
+}
+
+.trend .pic {
+    margin-top: 4%;
+}
+
+@media(max-width: 575.98px) {
+    .trend .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* end trend */
+
+/* start border */
+.divide-left {
+    border-bottom: double;
+    width: 30%;
+}
+
+.divide-right {
+    border-bottom: double;
+    width: 30%;
+    float: right;
+}
+/* end border */
+
+/* start items */
+.d-flex .nav .nav-link {
+    color: black;
+}
+
+section .d-flex .nav .nav-link:hover {
+    color: var(--hover-color);
+    border-bottom: 1px solid black;
+}
+
+.items .women .price {
+    background-color: black;
+    color: var(--text-color);
+    /* right: 10%; */
+}
+
+.items .women .sale {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    padding: 10% 4% 10% 4% ;
+    border-radius: 50%;
+}
+
+.items .women .eye i{
+    background-color: darkgrey;
+    color: var(--text-color);
+    font-size: 55px;
+    padding: 6% 4% 6% 4% ;
+    border-radius: 50%;
+}
+
+.items .women .eye {
+    background-color: #d8d5cf;
+    width: 88%;
+    height: 78%;
+    opacity: 0;
+    top: 0%;
+    left: 3%;
+}
+
+.items .women:hover .eye {
+    opacity: 0.9;
+}
+
+.items .man img {
+    width: 60%;
+    height: 70%;
+}
+
+.items .man .price {
+    background-color: black;
+    color: var(--text-color);
+}
+
+.items .man .sale {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    font-size: 12px;
+    padding: 8% 3% 8% 3% ;
+    border-radius: 50%;
+}
+
+.items .man .eye i{
+    background-color: darkgrey;
+    color: var(--text-color);
+    font-size: 40px;
+    padding: 4% 4% 4% 4% ;
+    border-radius: 50%;
+}
+
+.items .man .eye {
+    background-color: #d8d5cf;
+    width: 55%;
+    height: 70%;
+    opacity: 0;
+    top: 0%;
+    left: 3%;
+}
+
+.items .man:hover .eye {
+    opacity: 0.9;
+}
+
+.items .kid .price {
+    background-color: black;
+    color: var(--text-color);
+}
+
+.items .kid .sale {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    font-size: 14px;
+    padding: 9% 4% 9% 4% ;
+    border-radius: 50%;
+}
+
+.items .kid .eye i{
+    background-color: darkgrey;
+    color: var(--text-color);
+    font-size: 40px;
+    padding: 4% 4% 4% 4% ;
+    border-radius: 50%;
+}
+
+.items .kid .eye {
+    background-color: #d8d5cf;
+    width: 70%;
+    height: 73%;
+    opacity: 0;
+    top: 0%;
+    left: 3%;
+}
+
+.items .kid:hover .eye {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .items .row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* end items */
+
+/*start deal */
+.deal{
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+.deal .deal-two img {
+    width: 100%;
+    height: 90%;
+}
+
+.deal .deal-two .first {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.deal .deal-two .off {
+    font-size: 20px;
+    font-weight: normal;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+}
+
+.deal .deal-two .second {
+    padding-top: 5%;
+    font-size: 25px;
+}
+
+.deal .deal-one img {
+    width: 100%;
+    height: 90%;
+}
+
+.deal .deal-one span {
+    color: #6f42c1;
+}
+
+.deal .deal-one .first {
+    letter-spacing: 4px;
+}
+
+.deal .deal-one .second {
+    padding-top: 3%;
+    font-size: 30px;
+    font-weight: bold;
+}
+/*end deal */
+
+/* start border-two*/
+
+.border-two h5 {
+    color: rgb(53, 50, 50);
+}
+
+.border-left {
+    border-top: double;
+    width: 30%;
+}
+
+.border-right {
+    border-top: double;
+    width: 30%;
+    float: right;
+}
+/* end border-two*/
+
+/* start feature*/
+.feature .item .price {
+    background-color: black;
+    color: var(--text-color);
+    /* right: 10%; */
+}
+
+.feature .item .sale {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    padding: 10% 4% 10% 4% ;
+    border-radius: 50%;
+}
+
+.feature .item .eye i{
+    background-color: darkgrey;
+    color: var(--text-color);
+    font-size: 55px;
+    padding: 6% 4% 6% 4% ;
+    border-radius: 50%;
+}
+
+.feature .extra {
+    display: none;
+}
+
+.feature .item .eye {
+    background-color: #d8d5cf;
+    width: 88%;
+    height: 78%;
+    opacity: 0;
+    top: 0%;
+    left: 3%;
+}
+
+.feature .item:hover .eye {
+    opacity: 0.9;
+}
+
+/* .feature .container .load-more ,
+.feature .container .load-less{
+    align-items: center;
+} */
+
+button {
+    justify-content: center;
+}
+
+.load-more ,
+.load-less{
+    
+    margin-top: 3%;
+    padding: 1% 4% 1% 4%;
+    border-radius: 0%;
+    border: 1px solid black;
+    color: black;
+}
+
+.load-less {
+display: none;
+}
+/* end feature*/
+
+/* start word*/
+.word {
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+
+.word .ceo {
+    margin: 6% 15% 3% 15%;
+    line-height: 2.5;
+}
+
+.word .image {
+    width: 100%;
+    height: 100%;
+}
+
+.word i{
+    color: purple;
+    font-size: 25px;
+}
+
+.word .me {
+    width: 5%;
+    height: 5%;
+}
+
+.word .ceo h5 {
+    font-size: 12px;
+}
+/* end word*/
+
+/* start latest*/
+.border-three h5 {
+    color: rgb(53, 50, 50);
+}
+
+.border-left {
+    border-top: double;
+    width: 30%;
+}
+
+.border-right {
+    border-top: double;
+    width: 30%;
+    float: right;
+}
+/* end latest*/
+
+/* start blog*/
+.blog {
+    margin-top: 3%;
+    margin-bottom: 6%;
+}
+
+.blog .some img{
+    width: 95%;
+    height: 60%;
+}
+
+.blog .some h4 {
+    padding-top: 6%;
+}
+/* end blog*/
+
+/* start shop*/
+.border-four h5 {
+    color: rgb(53, 50, 50);
+}
+
+.border-left {
+    border-top: double;
+    width: 30%;
+}
+
+.border-right {
+    border-top: double;
+    width: 30%;
+    float: right;
+}
+/* end shop*/
+
+/* start brand*/
+.brand {
+    padding-bottom: 6%;
+}
+
+.brand img{
+    width: 90%;
+}
+/* end brand*/
+
+/* start info*/
+.info {
+    background-color: rgb(31, 28, 28);
+}
+
+.info .shop {
+    margin-top: 9%;
+    margin-bottom: 6%;
+}
+
+.info h6 {
+    padding-left: 13%;
+}
+
+.info ul {
+    padding-top: 9%;
+}
+
+.info ul li {
+    list-style: none ;
+}
+
+.info ul li a {
+    text-decoration: none;
+}
+
+.info .fill h6,
+.info .fill input,
+.info .fill button,
+.info .fill .social{
+    margin-top: 5%;
+}
+
+.info .fill input,
+.info .fill .social{
+    text-align: center;
+}
+
+.info .fill .btn {
+    background-color: blueviolet;
+    font-weight: bold;
+    border-radius: 0%;
+}
+
+.info .fill .social i{
+    font-size: 30px;
+    padding: 0% 3% 0% 3%;
+}
+/* end info*/
+
+/* start footer*/
+.link {
+    background-color: black;
+}
+
+.link .row {
+    padding-top: 1%;
+}
+
+.link .media i {
+    font-size: 30px;
+    padding: 0% 3% 0% 3%;
+}
+/* end footer*/
